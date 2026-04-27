@@ -1,5 +1,82 @@
 body {
-  font-family: Arial, sans-serif;
-  text-align: center;
-  padding: 40px;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  background: linear-gradient(to bottom, #ffffff, #f3f4f6);
+}
+
+.app {
+  max-width: 500px;
+  margin: auto;
+  padding: 16px;
+}
+
+.hero {
+  background: linear-gradient(135deg, #3b82f6, #22c55e);
+  color: white;
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero h1 {
+  margin: 0;
+}
+
+.car-icon {
+  font-size: 32px;
+}
+
+main {
+  margin-top: 16px;
+}
+
+.card {
+  background: white;
+  padding: 16px;
+  border-radius: 20px;
+  margin-bottom: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  margin-top: 8px;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.primary {
+  background: linear-gradient(to right, #3b82f6, #22c55e);
+  color: white;
+  width: 100%;
+}
+
+.secondary {
+  background: #e5e7eb;
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  gap: 8px;
+}
+
+#tripsList div {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin-top: 8px;
+  background: #f3f4f6;
+  border-radius: 12px;
 }

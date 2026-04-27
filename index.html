@@ -1,15 +1,64 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <title>Ma PWA</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carnet de route</title>
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#3b82f6">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#16a34a" />
 </head>
-<body>
-  <h1>Ma première PWA</h1>
-  <p>Ça fonctionne 🚀</p>
 
-  <button onclick="direBonjour()">Tester</button>
+<body>
+  <div class="app">
+    <header class="hero">
+      <div>
+        <p id="todayText">Aujourd’hui</p>
+        <h1>Carnet de route</h1>
+        <p>Total mois : <strong id="monthlyTotal">0 km</strong></p>
+      </div>
+      <div class="car-icon">🚗</div>
+    </header>
+
+    <main>
+      <section class="card">
+        <h2>Saisie kilomètres</h2>
+        <input id="kmInput" type="number" placeholder="0" />
+        <button id="saveKmBtn" class="primary">Valider</button>
+      </section>
+
+      <section class="card">
+        <h2>Trajets favoris</h2>
+
+        <div class="row">
+          <input id="tripNameInput" type="text" placeholder="Nom" />
+          <input id="tripKmInput" type="number" placeholder="Km" />
+          <button id="addTripBtn">+</button>
+        </div>
+
+        <div id="tripsList"></div>
+      </section>
+
+      <section class="card">
+        <h2>Historique</h2>
+        <div id="historyList">Aucune saisie pour le moment.</div>
+      </section>
+<section class="card">
+  <h2>Calendrier</h2>
+  <div id="calendar"></div>
+</section>
+      <section class="card">
+        <h2>Exports</h2>
+        <button id="exportCsvBtn" class="secondary">Exporter CSV</button>
+      </section>
+    </main>
+
+    <footer>
+      © 2026 MB • Carnet de route
+    </footer>
+  </div>
 
   <script src="app.js"></script>
 </body>
